@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration [
+        <!ELEMENT configuration (server, users)>
+        <!ELEMENT server (port, retainedMessagesNumber, maximumConnections)>
+        <!ELEMENT port (#PCDATA)>
+        <!ELEMENT retainedMessagesNumber (#PCDATA)>
+        <!ELEMENT maximumConnections (#PCDATA)>
+        <!ELEMENT users (user*)>
+        <!ELEMENT user (name, password)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT password (#PCDATA)>
+        ]>
+<configuration>
+    <server>
+        <port>1234</port>
+        <retainedMessagesNumber>20</retainedMessagesNumber>
+        <maximumConnections>5</maximumConnections>
+    </server>
+    <users>
+        <user>
+            <name>foo</name>
+            <password>bar</password>
+        </user>
+        <user>
+            <name>КорольЗебра</name>
+            <password>hello</password>
+        </user>
+        <user>
+            <name>Sasha</name>
+            <password>lol</password>
+        </user>
+        <user>
+            <name>ВУФЕР</name>
+            <password>123</password>
+        </user>
+        <user>
+            <name>FFUU</name>
+            <password>222</password>
+        </user>
+    </users>
+</configuration>
